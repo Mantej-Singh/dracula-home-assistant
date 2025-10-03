@@ -1,7 +1,7 @@
 # Dracula Theme for Home Assistant
 # https://draculatheme.com/home-assistant
 # Creator: Mantej Singh
-# Version: 1.2.0
+# Version: 1.2.1
 # Updated: 2025-10-03
 
 "Dracula":
@@ -493,6 +493,41 @@
   rgb-secondary-text-color: "98, 114, 164"
   rgb-text-primary-color: "248, 248, 242"
   rgb-card-background-color: "68, 71, 90"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Bubble Card (Pop-ups, Buttons, Cards)
+  # For Bubble Card custom component compatibility
+  # ───────────────────────────────────────────────────────────────────────────
+
+  # Pop-up styling
+  bubble-pop-up-background-color: "var(--dracula-current-line)"
+  bubble-pop-up-main-background-color: "var(--dracula-current-line)"
+  bubble-secondary-background-color: "var(--dracula-background)"
+  bubble-pop-up-border-radius: "42px"
+  bubble-pop-up-border: "none"
+  bubble-pop-up-gap: "14px"
+
+  # Button styling
+  bubble-button-card-bg-color: "var(--dracula-current-line)"
+  bubble-button-icon-color: "var(--dracula-foreground)"
+  bubble-button-light-color: "var(--dracula-yellow)"
+  bubble-button-light-color-on: "var(--dracula-yellow)"
+  bubble-icon-background-color: "var(--dracula-background)"
+  bubble-icon-background-color-on: "var(--dracula-purple)"
+
+  # Card styling
+  bubble-border-radius: "12px"
+  bubble-border: "none"
+  bubble-card-gap: "14px"
+
+  # Accent colors
+  bubble-accent-color: "var(--dracula-purple)"
+  bubble-sub-button-background-color: "var(--dracula-background)"
+  bubble-sub-button-light-background-color: "var(--dracula-current-line)"
+
+  # Text colors
+  bubble-name-color: "var(--dracula-foreground)"
+  bubble-state-color: "var(--dracula-comment)"
 
   # ───────────────────────────────────────────────────────────────────────────
   # Miscellaneous

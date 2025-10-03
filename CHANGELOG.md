@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1] - 2025-10-03
+
+### Added
+- **Bubble Card Compatibility** - Added 16 Bubble Card-specific CSS variables for proper popup, button, and card styling
+  - Pop-up background colors and border radius
+  - Button card styling (background, icon colors, light states)
+  - Sub-button styling with proper backgrounds
+  - Accent colors matching Dracula purple
+  - Name and state text colors
+
+### Fixed
+- Bubble Card popups now properly display with Dracula theme colors
+- Popup backgrounds use `dracula-current-line` (#44475a) for consistency
+- Sub-buttons now have proper contrast and visibility
+
 ## [1.2.0] - 2025-10-02
 
 ### Added
