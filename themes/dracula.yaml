@@ -1,0 +1,502 @@
+# Dracula Theme for Home Assistant
+# https://draculatheme.com/home-assistant
+# Creator: Mantej Singh
+# Version: 1.2.0
+# Updated: 2025-10-03
+
+"Dracula":
+  # ───────────────────────────────────────────────────────────────────────────
+  # Dracula Color Palette
+  # Official colors from https://draculatheme.com/contribute
+  # ───────────────────────────────────────────────────────────────────────────
+
+  dracula-background: "#282a36"
+  dracula-current-line: "#44475a"
+  dracula-foreground: "#f8f8f2"
+  dracula-comment: "#6272a4"
+  dracula-cyan: "#8be9fd"
+  dracula-green: "#50fa7b"
+  dracula-orange: "#ffb86c"
+  dracula-pink: "#ff79c6"
+  dracula-purple: "#bd93f9"
+  dracula-red: "#ff5555"
+  dracula-yellow: "#f1fa8c"
+
+  # Extra depth colors (for dropdowns/menus)
+  dracula-darker: "#3b3d4a"
+  dracula-selection: "#44475a"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Primary Colors
+  # ───────────────────────────────────────────────────────────────────────────
+
+  primary-color: "var(--dracula-purple)"
+  accent-color: "var(--dracula-cyan)"
+  dark-primary-color: "#8b6fc9"
+  light-primary-color: "#d5b7fb"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Background Colors
+  # ───────────────────────────────────────────────────────────────────────────
+
+  primary-background-color: "var(--dracula-background)"
+  secondary-background-color: "var(--dracula-background)"
+  divider-color: "rgba(139, 233, 253, 0.12)"
+  accent-medium-color: "var(--dracula-cyan)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Text Colors
+  # ───────────────────────────────────────────────────────────────────────────
+
+  primary-text-color: "var(--dracula-foreground)"
+  text-primary-color: "var(--dracula-foreground)"
+  secondary-text-color: "var(--dracula-comment)"
+  disabled-text-color: "var(--dracula-comment)"
+  text-light-primary-color: "var(--dracula-foreground)"
+  text-medium-color: "var(--dracula-comment)"
+  text-medium-light-color: "var(--dracula-comment)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Card Styling
+  # ───────────────────────────────────────────────────────────────────────────
+
+  card-background-color: "var(--dracula-current-line)"
+  ha-card-background: "var(--dracula-current-line)"
+  ha-card-border-radius: "12px"
+  ha-card-border-color: "transparent"
+  ha-card-box-shadow: "3px 3px 13px -6px rgba(0, 0, 0, 0.4)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Visual Polish & Effects
+  # ───────────────────────────────────────────────────────────────────────────
+
+  # Smooth transitions for premium feel
+  ha-card-transition: "all 0.3s ease-in-out"
+
+  # Hover effects for interactivity
+  ha-card-background-hover: "#4d5066"
+  ha-card-box-shadow-hover: "6px 6px 20px -8px rgba(0, 0, 0, 0.6)"
+
+  # Elevated/raised card styling
+  ha-card-box-shadow-raised: "6px 6px 20px -8px rgba(0, 0, 0, 0.6)"
+
+  # Active state glow effect
+  ha-state-glow-color: "var(--dracula-cyan)"
+  ha-state-glow-blur: "8px"
+
+  # Progress bars (used in media players, climate controls)
+  ha-progress-color: "var(--dracula-purple)"
+  ha-progress-background-color: "var(--dracula-current-line)"
+
+  # Loading indicators and spinners
+  ha-loading-color: "var(--dracula-cyan)"
+  ha-loading-background: "var(--dracula-current-line)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Badge Styling
+  # ───────────────────────────────────────────────────────────────────────────
+
+  ha-badge-border-radius: "12px"
+  label-badge-background-color: "var(--dracula-current-line)"
+  label-badge-text-color: "var(--dracula-foreground)"
+  label-badge-red: "var(--dracula-red)"
+  label-badge-blue: "var(--dracula-cyan)"
+  label-badge-green: "var(--dracula-green)"
+  label-badge-yellow: "var(--dracula-yellow)"
+  label-badge-grey: "var(--dracula-comment)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Sidebar
+  # ───────────────────────────────────────────────────────────────────────────
+
+  sidebar-background-color: "var(--dracula-current-line)"
+  sidebar-icon-color: "var(--dracula-foreground)"
+  sidebar-text-color: "var(--dracula-foreground)"
+  sidebar-selected-text-color: "var(--dracula-purple)"
+  sidebar-selected-icon-color: "var(--dracula-purple)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Header
+  # ───────────────────────────────────────────────────────────────────────────
+
+  app-header-background-color: "var(--dracula-current-line)"
+  app-header-text-color: "var(--dracula-foreground)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Status Colors
+  # ───────────────────────────────────────────────────────────────────────────
+
+  error-color: "var(--dracula-red)"
+  warning-color: "var(--dracula-orange)"
+  success-color: "var(--dracula-green)"
+  info-color: "var(--dracula-cyan)"
+  disabled-color: "var(--dracula-comment)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # State Colors
+  # ───────────────────────────────────────────────────────────────────────────
+
+  state-icon-color: "var(--dracula-cyan)"
+  state-icon-active-color: "var(--dracula-purple)"
+  state-active-color: "var(--dracula-green)"
+  state-inactive-color: "var(--dracula-comment)"
+
+  # Entity state colors
+  state-light-on-color: "var(--dracula-yellow)"
+  state-light-off-color: "var(--dracula-comment)"
+
+  state-switch-on-color: "var(--dracula-green)"
+  state-switch-off-color: "var(--dracula-comment)"
+
+  state-input_boolean-on-color: "var(--dracula-green)"
+  state-input_boolean-off-color: "var(--dracula-comment)"
+
+  state-lock-locked-color: "var(--dracula-green)"
+  state-lock-unlocked-color: "var(--dracula-red)"
+
+  state-cover-open-color: "var(--dracula-pink)"
+  state-cover-closed-color: "var(--dracula-green)"
+
+  state-climate-heat-color: "var(--dracula-orange)"
+  state-climate-cool-color: "var(--dracula-cyan)"
+  state-climate-auto-color: "var(--dracula-green)"
+  state-climate-dry-color: "var(--dracula-orange)"
+  state-climate-fan_only-color: "var(--dracula-cyan)"
+  state-climate-heat_cool-color: "var(--dracula-yellow)"
+
+  state-sun-above_horizon-color: "var(--dracula-yellow)"
+  state-sun-below_horizon-color: "var(--dracula-purple)"
+
+  state-media_player-active-color: "var(--dracula-cyan)"
+  state-media_player-paused-color: "var(--dracula-comment)"
+  state-media_player-idle-color: "var(--dracula-comment)"
+
+  state-person-home-color: "var(--dracula-green)"
+  state-person-not_home-color: "var(--dracula-purple)"
+
+  state-humidifier-on-color: "var(--dracula-cyan)"
+  state-humidifier-off-color: "var(--dracula-comment)"
+
+  state-siren-on-color: "var(--dracula-red)"
+  state-siren-off-color: "var(--dracula-comment)"
+
+  state-vacuum-active-color: "var(--dracula-cyan)"
+  state-vacuum-docked-color: "var(--dracula-comment)"
+  state-vacuum-error-color: "var(--dracula-red)"
+
+  # Alarm panel states
+  state-alarm_control_panel-disarmed-color: "var(--dracula-green)"
+  state-alarm_control_panel-armed_home-color: "var(--dracula-red)"
+  state-alarm_control_panel-armed_away-color: "var(--dracula-red)"
+  state-alarm_control_panel-armed_night-color: "var(--dracula-red)"
+  state-alarm_control_panel-armed_vacation-color: "var(--dracula-red)"
+  state-alarm_control_panel-arming-color: "var(--dracula-orange)"
+  state-alarm_control_panel-disarming-color: "var(--dracula-orange)"
+  state-alarm_control_panel-pending-color: "var(--dracula-yellow)"
+  state-alarm_control_panel-triggered-color: "var(--dracula-red)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Switch and Toggle Colors
+  # ───────────────────────────────────────────────────────────────────────────
+
+  switch-checked-color: "var(--dracula-purple)"
+  switch-unchecked-color: "var(--dracula-foreground)"
+  switch-checked-button-color: "var(--dracula-purple)"
+  switch-checked-track-color: "var(--dracula-current-line)"
+  switch-unchecked-button-color: "var(--dracula-comment)"
+  switch-unchecked-track-color: "var(--dracula-current-line)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Slider Colors
+  # ───────────────────────────────────────────────────────────────────────────
+
+  paper-slider-knob-color: "var(--dracula-cyan)"
+  paper-slider-active-color: "var(--dracula-cyan)"
+  paper-slider-container-color: "var(--dracula-current-line)"
+  slider-color: "var(--dracula-purple)"
+  slider-secondary-color: "var(--dracula-cyan)"
+  slider-track-color: "#6272a4"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Input Components
+  # ───────────────────────────────────────────────────────────────────────────
+
+  input-idle-line-color: "rgba(139, 233, 253, 0.42)"
+  input-hover-line-color: "rgba(139, 233, 253, 0.87)"
+  input-disabled-line-color: "rgba(139, 233, 253, 0.06)"
+  input-outlined-idle-border-color: "rgba(139, 233, 253, 0.38)"
+  input-outlined-hover-border-color: "rgba(139, 233, 253, 0.87)"
+  input-outlined-disabled-border-color: "rgba(139, 233, 253, 0.06)"
+  input-fill-color: "rgba(98, 114, 164, 0.1)"
+  input-disabled-fill-color: "rgba(98, 114, 164, 0.05)"
+  input-ink-color: "var(--dracula-foreground)"
+  input-label-ink-color: "var(--dracula-comment)"
+  input-disabled-ink-color: "var(--dracula-comment)"
+  input-dropdown-icon-color: "var(--dracula-comment)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # 🆕 DROPDOWN & MENU STYLING (Enhanced Depth)
+  # Prominent dropdown appearance
+  # ───────────────────────────────────────────────────────────────────────────
+
+  # Menu/Dropdown backgrounds (darker for depth)
+  mdc-menu-background-color: "var(--dracula-darker)"
+  menu-background-color: "var(--dracula-darker)"
+  
+  # Dropdown menu items
+  mdc-menu-item-background-color: "var(--dracula-darker)"
+  mdc-menu-item-hover-background-color: "var(--dracula-current-line)"
+  
+  # Menu shadows for depth (more prominent)
+  mdc-menu-box-shadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.6), 0px 0px 0px 1px rgba(139, 233, 253, 0.1)"
+  
+  # Dropdown border for definition
+  mdc-menu-border-color: "rgba(139, 233, 253, 0.2)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # MEDIA PLAYER ENHANCEMENTS (Music Assistant)
+  # ───────────────────────────────────────────────────────────────────────────
+
+  # Media progress bar (song/video progress)
+  media-progress-color: "var(--dracula-purple)"
+  media-progress-background: "var(--dracula-current-line)"
+  media-progress-buffer-color: "rgba(189, 147, 249, 0.3)"
+
+  # Volume slider
+  media-volume-color: "var(--dracula-cyan)"
+  media-volume-background: "var(--dracula-current-line)"
+  media-volume-knob-color: "var(--dracula-cyan)"
+
+  # Source selection dropdown
+  media-source-selected-color: "var(--dracula-purple)"
+  media-source-hover-color: "var(--dracula-cyan)"
+  media-source-background: "var(--dracula-current-line)"
+
+  # Playback controls (play/pause/next/previous)
+  media-control-color: "var(--dracula-foreground)"
+  media-control-hover-color: "var(--dracula-cyan)"
+  media-control-active-color: "var(--dracula-purple)"
+
+  # Album art border/shadow
+  media-art-border-radius: "8px"
+  media-art-shadow: "0 4px 12px rgba(0, 0, 0, 0.4)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Icons and Buttons (Media Player Fix)
+  # ───────────────────────────────────────────────────────────────────────────
+
+  # Icon button sizing and effects
+  mdc-icon-button-size: "48px"
+  mdc-icon-size: "24px"
+  mdc-ripple-color: "rgba(248, 248, 242, 0.2)"
+  mdc-ripple-hover-opacity: 0.12
+  mdc-ripple-focus-opacity: 0.24
+  mdc-ripple-press-opacity: 0.32
+
+  # Paper icon buttons (media player controls)
+  paper-item-icon-color: "var(--dracula-foreground)"
+  paper-item-icon-active-color: "var(--dracula-purple)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # HISTORY & LOGBOOK COLORS
+  # For tracking automation history and device logs
+  # ───────────────────────────────────────────────────────────────────────────
+
+  # History graph line colors
+  history-line-color: "var(--dracula-cyan)"
+  history-line-color-1: "var(--dracula-purple)"
+  history-line-color-2: "var(--dracula-pink)"
+  history-line-color-3: "var(--dracula-green)"
+  history-line-color-4: "var(--dracula-yellow)"
+  history-line-color-5: "var(--dracula-orange)"
+
+  # History graph fill (under the line)
+  history-fill-color: "rgba(139, 233, 253, 0.15)"
+  history-fill-color-1: "rgba(189, 147, 249, 0.15)"
+  history-fill-color-2: "rgba(255, 121, 198, 0.15)"
+  history-fill-color-3: "rgba(80, 250, 123, 0.15)"
+  history-fill-color-4: "rgba(241, 250, 140, 0.15)"
+  history-fill-color-5: "rgba(255, 184, 108, 0.15)"
+
+  # Logbook styling
+  logbook-background-color: "var(--dracula-current-line)"
+  logbook-icon-color: "var(--dracula-foreground)"
+  logbook-text-color: "var(--dracula-foreground)"
+  logbook-secondary-text-color: "var(--dracula-comment)"
+
+  # Timeline colors
+  timeline-accent-color: "var(--dracula-purple)"
+  timeline-background-color: "var(--dracula-current-line)"
+
+  # Graph axis and grid
+  graph-axis-color: "var(--dracula-comment)"
+  graph-grid-color: "rgba(98, 114, 164, 0.2)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # MAP CARD (ZONES)
+  # For person tracking and zone monitoring
+  # ───────────────────────────────────────────────────────────────────────────
+
+  # Default zone colors
+  map-zone-color: "var(--dracula-cyan)"
+  map-zone-stroke-color: "var(--dracula-purple)"
+  map-zone-fill-opacity: 0.2
+
+  # Home zone (special highlighting)
+  map-home-zone-color: "var(--dracula-green)"
+  map-home-zone-stroke-color: "var(--dracula-green)"
+  map-home-zone-fill-opacity: 0.25
+
+  # Custom zone 1 (work, school, etc.)
+  map-zone-primary-color: "var(--dracula-cyan)"
+  map-zone-primary-stroke-color: "var(--dracula-cyan)"
+
+  # Custom zone 2 (gym, parents' house, etc.)
+  map-zone-secondary-color: "var(--dracula-yellow)"
+  map-zone-secondary-stroke-color: "var(--dracula-yellow)"
+
+  # Person markers (default)
+  map-person-color: "var(--dracula-purple)"
+  map-person-home-color: "var(--dracula-green)"
+  map-person-away-color: "var(--dracula-orange)"
+
+  # Person 1 tracking (customizable)
+  map-person-primary-color: "var(--dracula-cyan)"
+
+  # Person 2 tracking (customizable)
+  map-person-secondary-color: "var(--dracula-pink)"
+
+  # Map controls and background
+  map-control-background: "var(--dracula-current-line)"
+  map-control-color: "var(--dracula-foreground)"
+  map-background: "var(--dracula-background)"
+
+  # Path/route colors (travel history)
+  map-path-color: "var(--dracula-purple)"
+  map-path-opacity: 0.6
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Material Design Components
+  # ───────────────────────────────────────────────────────────────────────────
+
+  mdc-theme-primary: "var(--dracula-purple)"
+  mdc-theme-secondary: "var(--dracula-cyan)"
+  mdc-theme-background: "var(--dracula-background)"
+  mdc-theme-surface: "var(--dracula-current-line)"
+  mdc-theme-on-primary: "var(--dracula-foreground)"
+  mdc-theme-on-secondary: "var(--dracula-foreground)"
+  mdc-theme-on-surface: "var(--dracula-foreground)"
+  mdc-theme-error: "var(--dracula-red)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # MDC Text Field (Input boxes)
+  # ───────────────────────────────────────────────────────────────────────────
+
+  mdc-text-field-idle-line-color: "var(--input-idle-line-color)"
+  mdc-text-field-hover-line-color: "var(--input-hover-line-color)"
+  mdc-text-field-disabled-line-color: "var(--input-disabled-line-color)"
+  mdc-text-field-outlined-idle-border-color: "var(--input-outlined-idle-border-color)"
+  mdc-text-field-outlined-hover-border-color: "var(--input-outlined-hover-border-color)"
+  mdc-text-field-outlined-disabled-border-color: "var(--input-outlined-disabled-border-color)"
+  mdc-text-field-fill-color: "var(--input-fill-color)"
+  mdc-text-field-disabled-fill-color: "var(--input-disabled-fill-color)"
+  mdc-text-field-ink-color: "var(--input-ink-color)"
+  mdc-text-field-label-ink-color: "var(--input-label-ink-color)"
+  mdc-text-field-disabled-ink-color: "var(--input-disabled-ink-color)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # MDC Select (Dropdowns - Enhanced)
+  # ───────────────────────────────────────────────────────────────────────────
+
+  mdc-select-idle-line-color: "var(--input-idle-line-color)"
+  mdc-select-hover-line-color: "var(--input-hover-line-color)"
+  mdc-select-outlined-idle-border-color: "rgba(139, 233, 253, 0.5)"
+  mdc-select-outlined-hover-border-color: "var(--dracula-cyan)"
+  mdc-select-outlined-disabled-border-color: "var(--input-outlined-disabled-border-color)"
+  
+  # Darker dropdown fill
+  mdc-select-fill-color: "var(--dracula-darker)"
+  mdc-select-disabled-fill-color: "var(--input-disabled-fill-color)"
+  
+  mdc-select-ink-color: "var(--dracula-foreground)"
+  mdc-select-label-ink-color: "var(--dracula-comment)"
+  mdc-select-disabled-ink-color: "var(--input-disabled-ink-color)"
+  mdc-select-dropdown-icon-color: "var(--dracula-cyan)"
+  mdc-select-disabled-dropdown-icon-color: "var(--input-disabled-ink-color)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # MDC Checkbox & Radio
+  # ───────────────────────────────────────────────────────────────────────────
+
+  mdc-checkbox-unchecked-color: "var(--dracula-comment)"
+  mdc-checkbox-disabled-color: "var(--disabled-text-color)"
+  mdc-radio-unchecked-color: "var(--dracula-comment)"
+  mdc-radio-disabled-color: "var(--disabled-text-color)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # MDC Button
+  # ───────────────────────────────────────────────────────────────────────────
+
+  mdc-button-disabled-ink-color: "var(--disabled-text-color)"
+  mdc-button-outline-color: "var(--divider-color)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # MDC Dialog (Popups)
+  # ───────────────────────────────────────────────────────────────────────────
+
+  mdc-dialog-scroll-divider-color: "var(--divider-color)"
+  mdc-dialog-heading-ink-color: "var(--primary-text-color)"
+  mdc-dialog-content-ink-color: "var(--primary-text-color)"
+  mdc-dialog-background-color: "var(--dracula-current-line)"
+  mdc-dialog-scrim-color: "rgba(0, 0, 0, 0.6)"
+  mdc-dialog-box-shadow: "0px 11px 15px -7px rgba(0, 0, 0, 0.6), 0px 24px 38px 3px rgba(0, 0, 0, 0.4)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Paper Components (Legacy)
+  # ───────────────────────────────────────────────────────────────────────────
+
+  paper-toggle-button-checked-bar-color: "var(--dracula-cyan)"
+  paper-radio-button-checked-color: "var(--dracula-purple)"
+  paper-input-container-focus-color: "var(--dracula-purple)"
+
+  # Paper dropdown menu (legacy - also needs dark background)
+  paper-listbox-background-color: "var(--dracula-darker)"
+  paper-item-selected-background-color: "var(--dracula-current-line)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Tables
+  # ───────────────────────────────────────────────────────────────────────────
+
+  table-row-background-color: "var(--dracula-background)"
+  table-row-alternative-background-color: "var(--dracula-current-line)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Energy Dashboard
+  # ───────────────────────────────────────────────────────────────────────────
+
+  energy-grid-consumption-color: "var(--dracula-cyan)"
+  energy-grid-return-color: "var(--dracula-purple)"
+  energy-solar-color: "var(--dracula-yellow)"
+  energy-non-fossil-color: "var(--dracula-green)"
+  energy-battery-out-color: "var(--dracula-red)"
+  energy-battery-in-color: "var(--dracula-pink)"
+  energy-gas-color: "var(--dracula-orange)"
+  energy-water-color: "var(--dracula-cyan)"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # RGB Values (for rgba() usage)
+  # ───────────────────────────────────────────────────────────────────────────
+
+  rgb-primary-color: "189, 147, 249"
+  rgb-accent-color: "139, 233, 253"
+  rgb-primary-text-color: "248, 248, 242"
+  rgb-secondary-text-color: "98, 114, 164"
+  rgb-text-primary-color: "248, 248, 242"
+  rgb-card-background-color: "68, 71, 90"
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # Miscellaneous
+  # ───────────────────────────────────────────────────────────────────────────
+
+  ha-control-color: "var(--dracula-purple)"
+  scrollbar-thumb-color: "var(--dracula-comment)"
