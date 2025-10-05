@@ -1,8 +1,8 @@
 # Dracula Theme for Home Assistant
 # https://draculatheme.com/home-assistant
 # Creator: Mantej Singh
-# Version: 1.2.1
-# Updated: 2025-10-03
+# Version: 1.2.2
+# Updated: 2025-10-04
 
 "Dracula":
   # ───────────────────────────────────────────────────────────────────────────
@@ -196,15 +196,15 @@
   state-alarm_control_panel-triggered-color: "var(--dracula-red)"
 
   # ───────────────────────────────────────────────────────────────────────────
-  # Switch and Toggle Colors
+  # Switch and Toggle Colors (Enhanced Depth)
   # ───────────────────────────────────────────────────────────────────────────
 
   switch-checked-color: "var(--dracula-purple)"
   switch-unchecked-color: "var(--dracula-foreground)"
-  switch-checked-button-color: "var(--dracula-purple)"
-  switch-checked-track-color: "var(--dracula-current-line)"
-  switch-unchecked-button-color: "var(--dracula-comment)"
-  switch-unchecked-track-color: "var(--dracula-current-line)"
+  switch-checked-button-color: "var(--dracula-foreground)"           # White knob on ON (high contrast)
+  switch-checked-track-color: "var(--dracula-purple)"                # Purple track on ON (elevated)
+  switch-unchecked-button-color: "var(--dracula-comment)"            # Gray knob on OFF
+  switch-unchecked-track-color: "var(--dracula-background)"          # Darker track on OFF (recedes)
 
   # ───────────────────────────────────────────────────────────────────────────
   # Slider Colors
@@ -501,7 +501,7 @@
 
   # Pop-up styling
   bubble-pop-up-background-color: "var(--dracula-current-line)"
-  bubble-pop-up-main-background-color: "var(--dracula-current-line)"
+  bubble-pop-up-main-background-color: "var(--dracula-comment)"          # Close button - lighter gray
   bubble-secondary-background-color: "var(--dracula-background)"
   bubble-pop-up-border-radius: "42px"
   bubble-pop-up-border: "none"
@@ -528,6 +528,9 @@
   # Text colors
   bubble-name-color: "var(--dracula-foreground)"
   bubble-state-color: "var(--dracula-comment)"
+
+  # Customization: Change close button color here
+  # Options: dracula-comment (default), dracula-purple, dracula-cyan, dracula-pink
 
   # ───────────────────────────────────────────────────────────────────────────
   # Miscellaneous

@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.2] - 2025-10-04
+
+### Enhanced
+- **Bubble Card Close Button** - Close button now uses lighter gray (`dracula-comment` #6272a4) for better header distinction
+- **Toggle Switch Depth** - Enhanced ON/OFF visual contrast for clearer state indication
+
+### Changed
+- `bubble-pop-up-main-background-color`: `dracula-current-line` → `dracula-comment` (lighter close button)
+- `switch-checked-button-color`: `dracula-purple` → `dracula-foreground` (white knob when ON)
+- `switch-checked-track-color`: `dracula-current-line` → `dracula-purple` (purple track when ON)
+- `switch-unchecked-track-color`: `dracula-current-line` → `dracula-background` (darker track when OFF)
+
+### Design
+- ON switches: Purple track + white knob (elevated, prominent)
+- OFF switches: Darker track + gray knob (recedes, subtle)
+- Better depth perception through color contrast
+- Close button subtly elevated without overwhelming UI
+
 ## [1.2.1] - 2025-10-03
 
 ### Added
